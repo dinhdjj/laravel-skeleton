@@ -16,3 +16,5 @@ yarn-error.log
 
 infection.html
 infection.log
+
+.php-cs-fixer.cache
