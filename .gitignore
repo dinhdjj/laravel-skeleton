@@ -18,3 +18,5 @@ infection.html
 infection.log
 
 .php-cs-fixer.cache
+
+build
