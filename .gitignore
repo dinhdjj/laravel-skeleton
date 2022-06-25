@@ -20,3 +20,7 @@ infection.log
 .php-cs-fixer.cache
 
 build
+
+.phpstorm.meta.php
+_ide_helper.php
+_ide_helper_models.php
