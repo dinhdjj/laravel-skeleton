@@ -16,7 +16,6 @@ module.exports = {
     "plugins": [
         "@typescript-eslint"
     ],
-    "ignorePatterns": ["**/*.d.ts"],
     "rules": {
         "no-console": "warn",
     },
