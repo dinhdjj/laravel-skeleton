@@ -60,3 +60,6 @@ jobs:
 
       - name: Run PHPStan
         run: ./vendor/bin/phpstan --error-format=github
+
+      - name: Check Typescript
+        run: npx tsc --noEmit --skipLibCheck
