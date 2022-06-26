@@ -6,10 +6,11 @@
         "prepare": "husky install"
     },
     "dependencies": {
-        "axios": "^0.25",
+        "axios": "^0.27",
         "lodash": "^4.17.19",
         "postcss": "^8.1.14",
         "vite": "^2.9.12",
+        "vite-plugin-eslint": "^1.6.1",
         "vite-plugin-laravel": "^0.2.0-beta.23",
         "ziggy-js": "^1.4.6"
     },
@@ -26,7 +27,6 @@
         "husky": "^8.0.0",
         "lint-staged": "^13.0.3",
         "prettier": "^2.7.1",
-        "prettier-plugin-tailwindcss": "^0.1.11",
-        "vite-plugin-eslint": "^1.6.1"
+        "prettier-plugin-tailwindcss": "^0.1.11"
     }
 }

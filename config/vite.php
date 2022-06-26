@@ -45,7 +45,8 @@ return [
     | https://laravel-vite.dev/configuration/laravel-package.html#aliases
     */
     'aliases' => [
-        '@' => 'resources',
+        '@' => 'resources/js',
+        '~' => 'resources/js/Components',
     ],
 
     /*
