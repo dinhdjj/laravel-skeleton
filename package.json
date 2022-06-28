@@ -1,4 +1,5 @@
 {
+    "name": "dinhdjj-laravel-skeleton",
     "private": true,
     "scripts": {
         "dev": "vite",
