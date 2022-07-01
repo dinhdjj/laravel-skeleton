@@ -1,4 +1,4 @@
 interface ImportMetaEnv {
-    readonly MIX_PUSHER_APP_KEY: string;
-    readonly MIX_PUSHER_APP_CLUSTER: string;
+    readonly VITE_PUSHER_APP_KEY: string;
+    readonly VITE_PUSHER_APP_CLUSTER: string;
 }
