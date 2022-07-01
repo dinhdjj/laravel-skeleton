@@ -1,20 +1,17 @@
-import { defineConfig } from "vite";
-import eslint from "vite-plugin-eslint";
-import laravel from 'laravel-vite-plugin'
+import { defineConfig } from 'vite';
+import eslint from 'vite-plugin-eslint';
+import laravel from 'laravel-vite-plugin';
 
 export default defineConfig({
     resolve: {
         alias: {
             '@': '/resources/js',
-            '~': '/resources/js/Components'
-        }
+            '~': '/resources/js/Components',
+        },
     },
     plugins: [
         eslint(),
-        laravel([
-            'resources/js/app.ts',
-            'resources/css/app.css',
-        ]),
+        laravel(['resources/js/app.ts', 'resources/css/app.css']),
         {
             name: 'blade',
             handleHotUpdate({ file, server }) {
@@ -25,6 +22,6 @@ export default defineConfig({
                     });
                 }
             },
-        }
+        },
     ],
 });

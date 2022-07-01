@@ -1,7 +1,0 @@
-{
-    "resources/**": [
-        "prettier --cache --write",
-        "eslint --cache --fix"
-    ],
-    "*.php": "./vendor/bin/php-cs-fixer fix"
-}

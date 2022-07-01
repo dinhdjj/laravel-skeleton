@@ -3,9 +3,7 @@
     "singleQuote": true,
     "overrides": [
         {
-            "files": [
-                "*.blade.php"
-            ],
+            "files": ["*.blade.php"],
             "options": {
                 "parser": "blade",
                 "sortTailwindcssClasses": true
