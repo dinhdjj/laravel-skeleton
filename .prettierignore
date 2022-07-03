@@ -35,6 +35,7 @@
 !commitlint.config.js
 !composer.json
 !CONTRIBUTING.md
+!DEPLOYMENT.md
 !infection.json
 !package.json
 !postcss.config.js
