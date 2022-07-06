@@ -6,20 +6,20 @@ use PhpCsFixer\Config;
 use PhpCsFixer\Finder;
 
 $rules = [
+    // Rule-sets
+    '@DoctrineAnnotation' => true,
+    '@PHP81Migration' => true,
+    '@PhpCsFixer' => true,
+
+    // Risky rule-sets
     '@PHPUnit84Migration:risky' => true,
     '@PHP80Migration:risky' => true,
-    '@PHP81Migration' => true,
-
-    '@PhpCsFixer' => true,
     '@PhpCsFixer:risky' => true,
 
-    '@Symfony' => true, // To override the @PhpCsFixer rules
-    '@Symfony:risky' => true, // To override the @PhpCsFixer:risky rules
-
-    /* 50 - 50 : consider */
-    'php_unit_internal_class' => false,
-    'php_unit_test_class_requires_covers' => false,
-
+    // Custom rules
+    'no_unset_on_property' => false, // It will helpful when unset relationship on model
+    'php_unit_internal_class' => false, // consider
+    'php_unit_test_class_requires_covers' => false, // consider
     'phpdoc_no_alias_tag' => [
         'replacements' => [
             'property-read' => 'property',
@@ -30,7 +30,6 @@ $rules = [
             // That not expected when use `spatie/laravel-typescript-transformer` package
         ],
     ],
-    'phpdoc_to_comment' => false,
 ];
 
 $finder = Finder::create()
@@ -39,6 +38,7 @@ $finder = Finder::create()
         __DIR__.'/bootstrap',
         __DIR__.'/config',
         __DIR__.'/database',
+        __DIR__.'/lang',
         __DIR__.'/routes',
         __DIR__.'/tests',
     ])
