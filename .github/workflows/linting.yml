@@ -27,13 +27,13 @@ jobs:
       - name: Install Composer Dependencies
         run: composer install -q --no-interaction --no-progress
 
-      - name: Run PHP CS Fixer
-        run: ./vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php
+      - name: Run Laravel Pint
+        run: ./vendor/bin/pint -vvv
 
-      - name: Commit Php-cs-fixer changes
+      - name: Commit Laravel Pint changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: 'Php-cs-fixer Fixed!'
+          commit_message: 'Laravel Pint Fixed!'
           commit_options: '--no-verify'
 
       - name: Setup Node.js
