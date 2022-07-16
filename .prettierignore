@@ -38,6 +38,7 @@
 !DEPLOYMENT.md
 !infection.json
 !package.json
+!pint.json
 !postcss.config.js
 !README.md
 !tailwind.config.js
