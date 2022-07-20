@@ -11,17 +11,9 @@ export default defineConfig({
     },
     plugins: [
         eslint(),
-        laravel(['resources/js/app.ts', 'resources/css/app.css']),
-        {
-            name: 'blade',
-            handleHotUpdate({ file, server }) {
-                if (file.endsWith('.blade.php')) {
-                    server.ws.send({
-                        type: 'full-reload',
-                        path: '*',
-                    });
-                }
-            },
-        },
+        laravel({
+            input: ['resources/js/app.ts', 'resources/css/app.css'],
+            refresh: ['resources/views/**'],
+        }),
     ],
 });
