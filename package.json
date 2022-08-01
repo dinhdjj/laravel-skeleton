@@ -15,7 +15,7 @@
         "@tailwindcss/typography": "^0.5.4",
         "autoprefixer": "^10.4.7",
         "axios": "^0.27",
-        "laravel-vite-plugin": "^0.5.0",
+        "laravel-vite-plugin": "^0.5.2",
         "lodash": "^4.17.19",
         "postcss": "^8.1.14",
         "tailwindcss": "^3.1.6",
@@ -26,7 +26,7 @@
     "devDependencies": {
         "@commitlint/cli": "^17.0.3",
         "@commitlint/config-conventional": "^17.0.3",
-        "@shufo/prettier-plugin-blade": "^1.4.18",
+        "@shufo/prettier-plugin-blade": "^1.4.22",
         "@types/lodash": "^4.14.182",
         "@types/ziggy-js": "^1.3.2",
         "@typescript-eslint/eslint-plugin": "^5.30.7",
